@@ -1,0 +1,164 @@
+:root {
+	font-size: calc(1vw + 1vh + 1.5vmin);
+}
+body{
+  overflow-x: hidden;
+  min-height: 100vh;
+  height: auto;
+}
+.neon-blue {
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
+		0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+.neon-purple {
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #f0f,
+		0 0 80px #f0f, 0 0 90px #f0f, 0 0 100px #f0f, 0 0 150px #f0f;
+}
+
+.neon-red {
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #f00,
+		0 0 80px #f00, 0 0 90px #f00, 0 0 100px #f00, 0 0 150px #f00;
+}
+
+.neon-green {
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0f0,
+		0 0 80px #0f0, 0 0 90px #0f0, 0 0 100px #0f0, 0 0 150px #0f0;
+}
+
+body {
+	background-color: #010a00;
+	background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+h1 {
+	font-family: "Press Start 2P", cursive;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+h2{
+  font-size: 1.0rem;
+}
+
+p{
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.score-board {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+#btn-wrap{
+  display: flex;
+  align-items: center;
+}
+.button {
+  color: #db3eb1;
+  border: 6px solid #db3eb1;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  filter: drop-shadow(0 0 9px #db3eb1) drop-shadow(0 0 30px #db3eb1) contrast(2) brightness(2);
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: black;
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 12px #db3eb1) contrast(2) brightness(2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.modal-content {
+  /* background-color: #fefefe; */
+  background: inherit;
+  color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 16px;
+  min-width: 250px;
+  width: auto;
+  max-width: 35vw;
+  height: auto;
+  text-align: center;
+}
+
+.modal-content h2{
+  font-family: "Press Start 2P", cursive;
+  line-height: 40px;
+  font-size: 0.8rem;
+}
+
+#modal-btn{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #f0f,
+  0 0 80px #f0f, 0 0 90px #f0f, 0 0 100px #f0f, 0 0 150px #f0f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1100px){
+  .modal-content{
+    max-width: 45vw;
+  }
+}
+
+
+
+@media (max-width: 560px) {
+  .button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 280px) {
+  .button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+
