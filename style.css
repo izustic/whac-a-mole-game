@@ -1,0 +1,58 @@
+ #mole-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.grid {
+  width: 505px;
+  height: 505px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.square {
+  background-image: url(assets/no-mole.jpeg);
+  background-size: cover;
+  height: 166px;
+  width: 166px;
+  border: none;
+  border-radius: 3px;
+}
+
+.mole {
+  background-image: url(assets/mole.jpeg);
+  background-size: cover;
+}
+
+@media (max-width: 560px) {
+  .grid {
+    width: 303px;
+    height: 303px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .square {
+    height: 99px;
+    width: 99px;
+  }
+}
+
+@media (max-width: 280px) {
+  .grid {
+    width: 252px;
+    height: 252px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .square {
+    height: 82px;
+    width: 82px;
+  }
+}
